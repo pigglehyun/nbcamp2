@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/memos")
+@RequestMapping("/api")
 public class MemoController {
 
     private final MemoService memoService;
@@ -38,5 +38,10 @@ public class MemoController {
     @DeleteMapping("/memos/{id}")
     public Long deleteMemo(@PathVariable Long id) {
         return memoService.deleteMemo(id);
+    }
+
+    @GetMapping("/memos/contents")
+    public List<MemoResponseDto> getMemosByKeyword(@RequestParam(value = "keyword", required = true) String keyword ){
+        return memoService.getMemosByKeyword(keyword);
     }
 }
