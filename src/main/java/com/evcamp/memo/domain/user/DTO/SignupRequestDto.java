@@ -11,10 +11,10 @@ import org.antlr.v4.runtime.misc.NotNull;
 public class SignupRequestDto {
 
     @Pattern(regexp = "^[a-zA-z0-9]+" + // 영어와 숫자로 이루어진 계정 아이디
-            "@ " +                      // @
+            "@" +                      // @
             "[a-zA-z0-9]+" +            // 영어와 숫자로 이루어진 도메인
             "\\." +                     // .
-            "[a-zA-z0-9]+$ ",           // 영어와 숫자로 이루어진 최상위 도메인
+            "[a-zA-z0-9]+$",           // 영어와 숫자로 이루어진 최상위 도메인
             message = "올바른 이메일 형식을 입력해주세요. ( 예 : ssar01@nate.com ) "
     )
     private final String email;
