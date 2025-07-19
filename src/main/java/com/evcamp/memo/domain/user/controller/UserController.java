@@ -2,20 +2,27 @@ package com.evcamp.memo.domain.user.controller;
 
 import com.evcamp.memo.domain.user.DTO.LoginRequestDto;
 import com.evcamp.memo.domain.user.DTO.LoginResponseDto;
+import com.evcamp.memo.domain.user.DTO.SignupRequestDto;
+import com.evcamp.memo.domain.user.DTO.UserResponseDto;
 import com.evcamp.memo.domain.user.service.UserService;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 @RequiredArgsConstructor
+@RequestMapping("/user")
 public class UserController {
 
     private final UserService userService;
+
+    @PostMapping("/signup")
+    public UserResponseDto signup(@RequestBody SignupRequestDto signupRequestDto) {
+        return userService.signup(signupRequestDto);
+    }
 
     @PostMapping("/login")
     public String login(
