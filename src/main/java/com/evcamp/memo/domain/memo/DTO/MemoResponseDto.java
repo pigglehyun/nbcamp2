@@ -1,6 +1,6 @@
-package com.evcamp.memo.DTO;
+package com.evcamp.memo.domain.memo.DTO;
 
-import com.evcamp.memo.entity.Memo;
+import com.evcamp.memo.domain.memo.entity.Memo;
 import lombok.Getter;
 
 import java.time.LocalDateTime;

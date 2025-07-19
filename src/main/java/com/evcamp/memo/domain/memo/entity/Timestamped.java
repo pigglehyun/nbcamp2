@@ -1,4 +1,4 @@
-package com.evcamp.memo.entity;
+package com.evcamp.memo.domain.memo.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

@@ -1,10 +1,9 @@
-package com.evcamp.memo.service;
+package com.evcamp.memo.domain.memo.service;
 
-import com.evcamp.memo.DTO.MemoRequestDto;
-import com.evcamp.memo.DTO.MemoResponseDto;
-import com.evcamp.memo.entity.Memo;
-import com.evcamp.memo.repository.MemoRepository;
-import lombok.RequiredArgsConstructor;
+import com.evcamp.memo.domain.memo.DTO.MemoRequestDto;
+import com.evcamp.memo.domain.memo.DTO.MemoResponseDto;
+import com.evcamp.memo.domain.memo.entity.Memo;
+import com.evcamp.memo.domain.memo.repository.MemoRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

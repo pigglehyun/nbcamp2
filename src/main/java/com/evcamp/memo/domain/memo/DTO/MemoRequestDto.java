@@ -1,4 +1,4 @@
-package com.evcamp.memo.DTO;
+package com.evcamp.memo.domain.memo.DTO;
 
 import lombok.Getter;
 

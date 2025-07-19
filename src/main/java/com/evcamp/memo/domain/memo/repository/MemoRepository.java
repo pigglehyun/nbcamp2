@@ -1,7 +1,6 @@
-package com.evcamp.memo.repository;
+package com.evcamp.memo.domain.memo.repository;
 
-import com.evcamp.memo.entity.Memo;
-import jakarta.persistence.EntityManager;
+import com.evcamp.memo.domain.memo.entity.Memo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

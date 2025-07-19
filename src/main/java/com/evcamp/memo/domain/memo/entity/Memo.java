@@ -1,6 +1,6 @@
-package com.evcamp.memo.entity;
+package com.evcamp.memo.domain.memo.entity;
 
-import com.evcamp.memo.DTO.MemoRequestDto;
+import com.evcamp.memo.domain.memo.DTO.MemoRequestDto;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

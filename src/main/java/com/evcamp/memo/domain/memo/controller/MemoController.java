@@ -1,11 +1,9 @@
-package com.evcamp.memo.controller;
+package com.evcamp.memo.domain.memo.controller;
 
 
-import com.evcamp.memo.DTO.MemoRequestDto;
-import com.evcamp.memo.DTO.MemoResponseDto;
-import com.evcamp.memo.service.MemoService;
-import lombok.RequiredArgsConstructor;
-import org.springframework.jdbc.core.JdbcTemplate;
+import com.evcamp.memo.domain.memo.DTO.MemoRequestDto;
+import com.evcamp.memo.domain.memo.DTO.MemoResponseDto;
+import com.evcamp.memo.domain.memo.service.MemoService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
