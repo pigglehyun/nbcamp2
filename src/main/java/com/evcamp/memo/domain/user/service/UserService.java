@@ -19,7 +19,14 @@ public class UserService {
     }
 
     public UserResponseDto findById(Long id) {
+        User user = findUserById(id);
+        return new UserResponseDto(user.getId(),user.getUserName());
+    }
 
         return userRepository.findById(id);
+    }
+
+    private User findUserById(Long id){
+        return userRepository.findById(id).orElseThrow( () -> new NoSuchElementException("존재 하지 않는 사용자입니다" + id));
     }
 }
