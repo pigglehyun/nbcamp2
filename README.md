@@ -2,7 +2,7 @@
 
 
 
-[✏️과제 TIL 주소 ]((https://sharp-houseboat-a45.notion.site/2-23434f9f370b803b9dbac6894bf91184?source=copy_link))    
+[✏️과제 TIL 주소 ](https://sharp-houseboat-a45.notion.site/2-23434f9f370b803b9dbac6894bf91184?source=copy_link)    
 
 
 
