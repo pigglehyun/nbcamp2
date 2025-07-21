@@ -6,7 +6,7 @@
 
 
 
-## **1. Memo**
+## **1. Memo - week2 branch**
 
 - keyword를 활용한 메모 검색
 
@@ -15,7 +15,7 @@
    `@Query("select m from Memo m where m.contents like concat('%',:keyword,'%') order by m.modifiedAt desc ")`
 
 
-## **2. Pattern & Validation**
+## **2. Pattern & Validation - week3 branch**
 
 - @Pattern을 활용한 이메일 검사
 
@@ -29,7 +29,7 @@
 `@Pattern(regexp = "^(?=.*[a-zA-Z])" + "(?=.*[0-9])" +                 /"(?=.*[!@#$%^&*])" +"[a-zA-Z0-9!@#$%^&*]{1,15}$",
 message = "비밀번호는 숫자, 영문자, 특수 문자(!@#$%^&*)를 포함한 15자 이하여야 합니다.")` 
 
-## **3. 배포하기**
+## **3. 배포하기 -  week4 branch**
 
   👉 배포 성공
   
