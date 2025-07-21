@@ -18,6 +18,11 @@ public class MemoController {
         this.memoService = memoService;
     }
 
+    @GetMapping()
+    public String test(){
+        return "hello";
+    }
+
     @PostMapping("/memos")
     public MemoResponseDto createMemo(@RequestBody MemoRequestDto requestDto) {
         return memoService.createMemo(requestDto);
