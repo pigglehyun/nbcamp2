@@ -14,6 +14,7 @@
 
    `@Query("select m from Memo m where m.contents like concat('%',:keyword,'%') order by m.modifiedAt desc ")`
 
+</br>
 
 ## **2. Pattern & Validation - week3 branch**
 
@@ -27,7 +28,9 @@
 
   👉 
 `@Pattern(regexp = "^(?=.*[a-zA-Z])" + "(?=.*[0-9])" +                 /"(?=.*[!@#$%^&*])" +"[a-zA-Z0-9!@#$%^&*]{1,15}$",
-message = "비밀번호는 숫자, 영문자, 특수 문자(!@#$%^&*)를 포함한 15자 이하여야 합니다.")` 
+message = "비밀번호는 숫자, 영문자, 특수 문자(!@#$%^&*)를 포함한 15자 이하여야 합니다.")`
+
+</br>
 
 ## **3. 배포하기 -  week4 branch**
 
